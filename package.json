@@ -1,0 +1,27 @@
+{
+  "name": "flex",
+  "version": "1.0.0",
+  "description": "flex tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpaluy/flex.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dpaluy/flex/issues"
+  },
+  "homepage": "https://github.com/dpaluy/flex",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "lodash": "^4.0.0",
+    "sassdoc": "^2.1.20"
+  }
+}
