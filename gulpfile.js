@@ -6,6 +6,7 @@ var sassdoc = require('sassdoc');
 
 var input = './src/**/*.scss';
 var output = './public/css';
+var build = './build/css';
 
 var sassOptions = {
   errLogToConsole: true,
@@ -37,6 +38,14 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(output))
     .pipe(sassdoc())
     .resume();
+});
+
+gulp.task('prod', function () {
+  return gulp
+    .src(input)
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(gulp.dest(build));
 });
 
 gulp.task('watch', function() {

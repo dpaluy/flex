@@ -2,4 +2,5 @@
 *.css.map
 /node_modules/*
 /public/*
+/sassdoc/*
 .DS_Store
